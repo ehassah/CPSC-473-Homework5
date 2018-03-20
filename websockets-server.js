@@ -13,7 +13,7 @@ var topic = "not set yet";
 
 ws.on("connection", function(socket) {
   console.log("client connection estblished");
-  
+
   if (topic != "not set yet")
     socket.send("*** Topic is '" + topic + "'");
 
